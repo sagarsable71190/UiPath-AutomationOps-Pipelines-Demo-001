@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2162.4,2996.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2162.4,2916.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -61,7 +61,13 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -70,47 +76,37 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,2932" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,2852" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://uibank.uipath.com/" Name="UiBankWeb" />
     </Sequence.Variables>
@@ -120,7 +116,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Process Started&quot;]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" ContinueOnError="True" DisplayName="Attach Browser UiBank" sap:VirtualizedContainerService.HintSize="449.6,356" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="dcfb446bef0283ad5d0488ab81793d23" Selector="&lt;html app='chrome.exe' title='*UiBank*' /&gt;" TimeoutMS="1000">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" ContinueOnError="True" DisplayName="Attach Browser UiBank" sap:VirtualizedContainerService.HintSize="449.6,316" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="dcfb446bef0283ad5d0488ab81793d23" Selector="&lt;html app='chrome.exe' title='*UiBank*' /&gt;" TimeoutMS="1000">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -143,7 +139,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="449.6,2312.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1be941fa-c8b4-4341-bf1c-774ddd5de68f" WindowResize="Maximize">
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="449.6,2272.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1be941fa-c8b4-4341-bf1c-774ddd5de68f" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
